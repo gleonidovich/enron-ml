@@ -1,0 +1,1490 @@
+NaN_percentage: 1.000000
+Features_by_NaN:
+['poi', 'salary', 'deferral_payments', 'total_payments', 'loan_advances', 'bonus', 'restricted_stock_deferred', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'director_fees', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+Features_Used: ['poi', 'salary', 'deferral_payments', 'total_payments', 'loan_advances', 'bonus', 'restricted_stock_deferred', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'director_fees', 'shared_receipt_with_poi', 'fraction_from_poi', 'fraction_to_poi']
+
+scaled
+RandomForest :
+best_params: {'n_estimators': 5, 'criterion': 'gini', 'max_depth': 5}
+
+             precision    recall  f1-score   support
+
+        0.0       0.95      1.00      0.98        40
+        1.0       1.00      0.50      0.67         4
+
+avg / total       0.96      0.95      0.95        44
+
+MLP :
+best_params: {'solver': 'sgd', 'activation': 'identity', 'max_iter': 500, 'alpha': 1.0000000000000001e-05, 'learning_rate': 'invscaling', 'learning_rate_init': 0.005}
+
+             precision    recall  f1-score   support
+
+        0.0       0.95      0.97      0.96        40
+        1.0       0.67      0.50      0.57         4
+
+avg / total       0.93      0.93      0.93        44
+
+LogisticReg :
+best_params: {'C': 46415.888336127726, 'solver': 'newton-cg'}
+
+             precision    recall  f1-score   support
+
+        0.0       0.97      0.90      0.94        40
+        1.0       0.43      0.75      0.55         4
+
+avg / total       0.92      0.89      0.90        44
+
+k-NN :
+best_params: {'n_neighbors': 2, 'weights': 'distance', 'leaf_size': 5, 'algorithm': 'ball_tree', 'p': 2}
+
+             precision    recall  f1-score   support
+
+        0.0       0.95      0.93      0.94        40
+        1.0       0.40      0.50      0.44         4
+
+avg / total       0.90      0.89      0.89        44
+
+DecisionTree :
+best_params: {'splitter': 'random', 'criterion': 'gini', 'max_depth': 10}
+
+             precision    recall  f1-score   support
+
+        0.0       0.95      0.90      0.92        40
+        1.0       0.33      0.50      0.40         4
+
+avg / total       0.89      0.86      0.88        44
+
+
+NaN_percentage: 0.800000
+Features_by_NaN:
+['poi', 'salary', 'deferral_payments', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+Features_Used: ['poi', 'salary', 'deferral_payments', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'shared_receipt_with_poi', 'fraction_from_poi', 'fraction_to_poi']
+
+scaled
+RandomForest :
+best_params: {'n_estimators': 5, 'criterion': 'entropy', 'max_depth': None}
+
+             precision    recall  f1-score   support
+
+        0.0       0.93      0.95      0.94        40
+        1.0       0.33      0.25      0.29         4
+
+avg / total       0.87      0.89      0.88        44
+
+MLP :
+best_params: {'solver': 'sgd', 'activation': 'relu', 'max_iter': 500, 'alpha': 1.0000000000000001e-09, 'learning_rate': 'invscaling', 'learning_rate_init': 0.0005}
+
+             precision    recall  f1-score   support
+
+        0.0       0.00      0.00      0.00        40
+        1.0       0.09      1.00      0.17         4
+
+avg / total       0.01      0.09      0.02        44
+
+LogisticReg :
+best_params: {'C': 21544346.900318779, 'solver': 'newton-cg'}
+
+             precision    recall  f1-score   support
+
+        0.0       0.97      0.93      0.95        40
+        1.0       0.50      0.75      0.60         4
+
+avg / total       0.93      0.91      0.92        44
+
+k-NN :
+best_params: {'n_neighbors': 2, 'weights': 'distance', 'leaf_size': 5, 'algorithm': 'ball_tree', 'p': 1}
+
+             precision    recall  f1-score   support
+
+        0.0       0.95      0.97      0.96        40
+        1.0       0.67      0.50      0.57         4
+
+avg / total       0.93      0.93      0.93        44
+
+DecisionTree :
+best_params: {'splitter': 'random', 'criterion': 'gini', 'max_depth': 30}
+
+             precision    recall  f1-score   support
+
+        0.0       0.93      0.95      0.94        40
+        1.0       0.33      0.25      0.29         4
+
+avg / total       0.87      0.89      0.88        44
+
+
+NaN_percentage: 0.700000
+Features_by_NaN:
+['poi', 'salary', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+Features_Used: ['poi', 'salary', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'shared_receipt_with_poi', 'fraction_from_poi', 'fraction_to_poi']
+
+scaled
+RandomForest :
+best_params: {'n_estimators': 5, 'criterion': 'gini', 'max_depth': 10}
+
+             precision    recall  f1-score   support
+
+        0.0       0.95      0.97      0.96        40
+        1.0       0.67      0.50      0.57         4
+
+avg / total       0.93      0.93      0.93        44
+
+MLP :
+best_params: {'solver': 'adam', 'activation': 'relu', 'max_iter': 100, 'alpha': 1.0000000000000001e-05, 'learning_rate': 'invscaling', 'learning_rate_init': 0.0001}
+
+             precision    recall  f1-score   support
+
+        0.0       0.94      0.78      0.85        40
+        1.0       0.18      0.50      0.27         4
+
+avg / total       0.87      0.75      0.80        44
+
+LogisticReg :
+best_params: {'C': 46415.888336127726, 'solver': 'newton-cg'}
+
+             precision    recall  f1-score   support
+
+        0.0       0.95      0.93      0.94        40
+        1.0       0.40      0.50      0.44         4
+
+avg / total       0.90      0.89      0.89        44
+
+k-NN :
+best_params: {'n_neighbors': 2, 'weights': 'distance', 'leaf_size': 5, 'algorithm': 'ball_tree', 'p': 2}
+
+             precision    recall  f1-score   support
+
+        0.0       0.95      0.95      0.95        40
+        1.0       0.50      0.50      0.50         4
+
+avg / total       0.91      0.91      0.91        44
+
+DecisionTree :
+best_params: {'splitter': 'random', 'criterion': 'entropy', 'max_depth': None}
+
+             precision    recall  f1-score   support
+
+        0.0       0.93      0.95      0.94        40
+        1.0       0.33      0.25      0.29         4
+
+avg / total       0.87      0.89      0.88        44
+
+
+NaN_percentage: 1.000000
+Features_by_NaN:
+['poi', 'salary', 'deferral_payments', 'total_payments', 'loan_advances', 'bonus', 'restricted_stock_deferred', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'director_fees', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+Features_Used: ['poi', 'salary', 'deferral_payments', 'total_payments', 'loan_advances', 'bonus', 'restricted_stock_deferred', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'director_fees', 'shared_receipt_with_poi', 'fraction_from_poi', 'fraction_to_poi']
+
+non-scaled
+RandomForest :
+best_params: {'n_estimators': 5, 'criterion': 'gini', 'max_depth': 15}
+
+             precision    recall  f1-score   support
+
+        0.0       0.93      1.00      0.96        40
+        1.0       1.00      0.25      0.40         4
+
+avg / total       0.94      0.93      0.91        44
+
+MLP :
+best_params: {'solver': 'lbfgs', 'activation': 'tanh', 'max_iter': 200, 'alpha': 0.00021544346900318823, 'learning_rate': 'adaptive', 'learning_rate_init': 0.01}
+
+             precision    recall  f1-score   support
+
+        0.0       0.90      0.88      0.89        40
+        1.0       0.00      0.00      0.00         4
+
+avg / total       0.82      0.80      0.81        44
+
+LogisticReg :
+best_params: {'C': 4.6415888336127775, 'solver': 'newton-cg'}
+
+             precision    recall  f1-score   support
+
+        0.0       0.95      0.93      0.94        40
+        1.0       0.40      0.50      0.44         4
+
+avg / total       0.90      0.89      0.89        44
+
+k-NN :
+best_params: {'n_neighbors': 4, 'weights': 'distance', 'leaf_size': 5, 'algorithm': 'ball_tree', 'p': 1}
+
+             precision    recall  f1-score   support
+
+        0.0       0.93      1.00      0.96        40
+        1.0       1.00      0.25      0.40         4
+
+avg / total       0.94      0.93      0.91        44
+
+DecisionTree :
+best_params: {'splitter': 'random', 'criterion': 'gini', 'max_depth': None}
+
+             precision    recall  f1-score   support
+
+        0.0       0.95      0.95      0.95        40
+        1.0       0.50      0.50      0.50         4
+
+avg / total       0.91      0.91      0.91        44
+
+NaN_percentage: 0.800000
+Features_by_NaN:
+['poi', 'salary', 'deferral_payments', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+Features_Used: ['poi', 'salary', 'deferral_payments', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'shared_receipt_with_poi', 'fraction_from_poi', 'fraction_to_poi']
+
+non-scaled
+RandomForest :
+best_params: {'n_estimators': 5, 'criterion': 'gini', 'max_depth': 15}
+
+             precision    recall  f1-score   support
+
+        0.0       0.93      0.97      0.95        40
+        1.0       0.50      0.25      0.33         4
+
+avg / total       0.89      0.91      0.90        44
+
+MLP :
+best_params: {'solver': 'lbfgs', 'activation': 'tanh', 'max_iter': 200, 'alpha': 0.10000000000000001, 'learning_rate': 'adaptive', 'learning_rate_init': 0.01}
+
+             precision    recall  f1-score   support
+
+        0.0       0.90      0.90      0.90        40
+        1.0       0.00      0.00      0.00         4
+
+avg / total       0.82      0.82      0.82        44
+
+LogisticReg :
+best_params: {'C': 46415.888336127726, 'solver': 'liblinear'}
+
+             precision    recall  f1-score   support
+
+        0.0       0.91      0.80      0.85        40
+        1.0       0.11      0.25      0.15         4
+
+avg / total       0.84      0.75      0.79        44
+
+k-NN :
+best_params: {'n_neighbors': 4, 'weights': 'distance', 'leaf_size': 5, 'algorithm': 'ball_tree', 'p': 1}
+
+             precision    recall  f1-score   support
+
+        0.0       0.91      1.00      0.95        40
+        1.0       0.00      0.00      0.00         4
+
+avg / total       0.83      0.91      0.87        44
+
+DecisionTree :
+best_params: {'splitter': 'random', 'criterion': 'gini', 'max_depth': None}
+
+             precision    recall  f1-score   support
+
+        0.0       0.95      0.88      0.91        40
+        1.0       0.29      0.50      0.36         4
+
+avg / total       0.89      0.84      0.86        44
+
+NaN_percentage: 0.700000
+Features_by_NaN:
+['poi', 'salary', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+Features_Used: ['poi', 'salary', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'shared_receipt_with_poi', 'fraction_from_poi', 'fraction_to_poi']
+
+non-scaled
+RandomForest :
+best_params: {'n_estimators': 5, 'criterion': 'gini', 'max_depth': 10}
+
+             precision    recall  f1-score   support
+
+        0.0       0.92      0.90      0.91        40
+        1.0       0.20      0.25      0.22         4
+
+avg / total       0.86      0.84      0.85        44
+
+MLP :
+best_params: {'solver': 'lbfgs', 'activation': 'tanh', 'max_iter': 500, 'alpha': 0.0046415888336127729, 'learning_rate': 'adaptive', 'learning_rate_init': 0.0001}
+
+             precision    recall  f1-score   support
+
+        0.0       0.89      0.82      0.86        40
+        1.0       0.00      0.00      0.00         4
+
+avg / total       0.81      0.75      0.78        44
+
+LogisticReg :
+best_params: {'C': 100.0, 'solver': 'liblinear'}
+
+             precision    recall  f1-score   support
+
+        0.0       0.92      0.82      0.87        40
+        1.0       0.12      0.25      0.17         4
+
+avg / total       0.84      0.77      0.80        44
+
+k-NN :
+best_params: {'n_neighbors': 4, 'weights': 'distance', 'leaf_size': 5, 'algorithm': 'ball_tree', 'p': 1}
+
+             precision    recall  f1-score   support
+
+        0.0       0.91      1.00      0.95        40
+        1.0       0.00      0.00      0.00         4
+
+avg / total       0.83      0.91      0.87        44
+
+DecisionTree :
+best_params: {'splitter': 'random', 'criterion': 'entropy', 'max_depth': 30}
+
+             precision    recall  f1-score   support
+
+        0.0       0.92      0.88      0.90        40
+        1.0       0.17      0.25      0.20         4
+
+avg / total       0.85      0.82      0.83        44
+
+
+
+NaN_percentage: 1.000000
+Features_by_NaN:
+['poi', 'salary', 'deferral_payments', 'total_payments', 'loan_advances', 'bonus', 'restricted_stock_deferred', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'director_fees', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+Features_Used: ['poi', 'salary', 'deferral_payments', 'total_payments', 'loan_advances', 'bonus', 'restricted_stock_deferred', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'director_fees', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+
+scaled
+RandomForest :
+best_params: {'n_estimators': 5, 'criterion': 'gini', 'max_depth': 30}
+
+             precision    recall  f1-score   support
+
+        0.0       0.90      0.95      0.93        40
+        1.0       0.00      0.00      0.00         4
+
+avg / total       0.82      0.86      0.84        44
+
+MLP :
+best_params: {'solver': 'adam', 'activation': 'relu', 'max_iter': 50, 'alpha': 46.415888336127729, 'learning_rate': 'invscaling', 'learning_rate_init': 0.0005}
+
+             precision    recall  f1-score   support
+
+        0.0       0.94      0.85      0.89        40
+        1.0       0.25      0.50      0.33         4
+
+avg / total       0.88      0.82      0.84        44
+
+LogisticReg :
+best_params: {'C': 1000000.0, 'solver': 'lbfgs'}
+
+             precision    recall  f1-score   support
+
+        0.0       0.97      0.90      0.94        40
+        1.0       0.43      0.75      0.55         4
+
+avg / total       0.92      0.89      0.90        44
+
+k-NN :
+best_params: {'n_neighbors': 2, 'weights': 'distance', 'leaf_size': 5, 'algorithm': 'ball_tree', 'p': 2}
+
+             precision    recall  f1-score   support
+
+        0.0       0.95      0.93      0.94        40
+        1.0       0.40      0.50      0.44         4
+
+avg / total       0.90      0.89      0.89        44
+
+DecisionTree :
+best_params: {'splitter': 'random', 'criterion': 'entropy', 'max_depth': 10}
+
+             precision    recall  f1-score   support
+
+        0.0       0.92      0.85      0.88        40
+        1.0       0.14      0.25      0.18         4
+
+avg / total       0.85      0.80      0.82        44
+
+
+NaN_percentage: 0.800000
+Features_by_NaN:
+['poi', 'salary', 'deferral_payments', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+Features_Used: ['poi', 'salary', 'deferral_payments', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+
+scaled
+RandomForest :
+best_params: {'n_estimators': 5, 'criterion': 'gini', 'max_depth': 15}
+
+             precision    recall  f1-score   support
+
+        0.0       0.92      0.90      0.91        40
+        1.0       0.20      0.25      0.22         4
+
+avg / total       0.86      0.84      0.85        44
+
+MLP :
+best_params: {'solver': 'adam', 'activation': 'identity', 'max_iter': 100, 'alpha': 4.6415888336127725e-07, 'learning_rate': 'adaptive', 'learning_rate_init': 0.0001}
+
+             precision    recall  f1-score   support
+
+        0.0       0.97      0.70      0.81        40
+        1.0       0.20      0.75      0.32         4
+
+avg / total       0.90      0.70      0.77        44
+
+LogisticReg :
+best_params: {'C': 21544346.900318779, 'solver': 'newton-cg'}
+
+             precision    recall  f1-score   support
+
+        0.0       0.97      0.93      0.95        40
+        1.0       0.50      0.75      0.60         4
+
+avg / total       0.93      0.91      0.92        44
+
+k-NN :
+best_params: {'n_neighbors': 2, 'weights': 'distance', 'leaf_size': 5, 'algorithm': 'ball_tree', 'p': 1}
+
+             precision    recall  f1-score   support
+
+        0.0       0.95      0.97      0.96        40
+        1.0       0.67      0.50      0.57         4
+
+avg / total       0.93      0.93      0.93        44
+
+DecisionTree :
+best_params: {'splitter': 'random', 'criterion': 'gini', 'max_depth': 15}
+
+             precision    recall  f1-score   support
+
+        0.0       0.95      0.90      0.92        40
+        1.0       0.33      0.50      0.40         4
+
+avg / total       0.89      0.86      0.88        44
+
+
+NaN_percentage: 0.700000
+Features_by_NaN:
+['poi', 'salary', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+Features_Used: ['poi', 'salary', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+
+scaled
+RandomForest :
+best_params: {'n_estimators': 5, 'criterion': 'entropy', 'max_depth': 10}
+
+             precision    recall  f1-score   support
+
+        0.0       0.93      0.97      0.95        40
+        1.0       0.50      0.25      0.33         4
+
+avg / total       0.89      0.91      0.90        44
+
+MLP :
+best_params: {'solver': 'adam', 'activation': 'tanh', 'max_iter': 100, 'alpha': 1.0000000000000001e-05, 'learning_rate': 'invscaling', 'learning_rate_init': 0.0001}
+
+             precision    recall  f1-score   support
+
+        0.0       0.94      0.85      0.89        40
+        1.0       0.25      0.50      0.33         4
+
+avg / total       0.88      0.82      0.84        44
+
+LogisticReg :
+best_params: {'C': 100.0, 'solver': 'newton-cg'}
+
+             precision    recall  f1-score   support
+
+        0.0       0.95      0.93      0.94        40
+        1.0       0.40      0.50      0.44         4
+
+avg / total       0.90      0.89      0.89        44
+
+k-NN :
+best_params: {'n_neighbors': 2, 'weights': 'distance', 'leaf_size': 5, 'algorithm': 'ball_tree', 'p': 2}
+
+             precision    recall  f1-score   support
+
+        0.0       0.95      0.95      0.95        40
+        1.0       0.50      0.50      0.50         4
+
+avg / total       0.91      0.91      0.91        44
+
+DecisionTree :
+best_params: {'splitter': 'random', 'criterion': 'entropy', 'max_depth': 15}
+
+             precision    recall  f1-score   support
+
+        0.0       0.95      0.93      0.94        40
+        1.0       0.40      0.50      0.44         4
+
+avg / total       0.90      0.89      0.89        44
+
+
+NaN_percentage: 1.000000
+Features_by_NaN:
+['poi', 'salary', 'deferral_payments', 'total_payments', 'loan_advances', 'bonus', 'restricted_stock_deferred', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'director_fees', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+Features_Used: ['poi', 'salary', 'deferral_payments', 'total_payments', 'loan_advances', 'bonus', 'restricted_stock_deferred', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'director_fees', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+
+non-scaled
+RandomForest :
+best_params: {'n_estimators': 5, 'criterion': 'gini', 'max_depth': 5}
+
+             precision    recall  f1-score   support
+
+        0.0       0.93      0.95      0.94        40
+        1.0       0.33      0.25      0.29         4
+
+avg / total       0.87      0.89      0.88        44
+
+MLP :
+best_params: {'solver': 'lbfgs', 'activation': 'tanh', 'max_iter': 50, 'alpha': 1.0000000000000001e-09, 'learning_rate': 'invscaling', 'learning_rate_init': 0.01}
+
+             precision    recall  f1-score   support
+
+        0.0       0.94      0.82      0.88        40
+        1.0       0.22      0.50      0.31         4
+
+avg / total       0.88      0.80      0.83        44
+
+LogisticReg :
+best_params: {'C': 4.6415888336127775, 'solver': 'newton-cg'}
+
+             precision    recall  f1-score   support
+
+        0.0       0.92      0.90      0.91        40
+        1.0       0.20      0.25      0.22         4
+
+avg / total       0.86      0.84      0.85        44
+
+k-NN :
+best_params: {'n_neighbors': 4, 'weights': 'distance', 'leaf_size': 5, 'algorithm': 'ball_tree', 'p': 1}
+
+             precision    recall  f1-score   support
+
+        0.0       0.93      1.00      0.96        40
+        1.0       1.00      0.25      0.40         4
+
+avg / total       0.94      0.93      0.91        44
+
+DecisionTree :
+best_params: {'splitter': 'best', 'criterion': 'gini', 'max_depth': 5}
+
+             precision    recall  f1-score   support
+
+        0.0       0.95      0.95      0.95        40
+        1.0       0.50      0.50      0.50         4
+
+avg / total       0.91      0.91      0.91        44
+
+
+NaN_percentage: 0.800000
+Features_by_NaN:
+['poi', 'salary', 'deferral_payments', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+Features_Used: ['poi', 'salary', 'deferral_payments', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+
+non-scaled
+RandomForest :
+best_params: {'n_estimators': 5, 'criterion': 'gini', 'max_depth': None}
+
+             precision    recall  f1-score   support
+
+        0.0       0.91      0.97      0.94        40
+        1.0       0.00      0.00      0.00         4
+
+avg / total       0.82      0.89      0.85        44
+
+MLP :
+best_params: {'solver': 'lbfgs', 'activation': 'relu', 'max_iter': 100, 'alpha': 0.0046415888336127729, 'learning_rate': 'invscaling', 'learning_rate_init': 0.01}
+
+             precision    recall  f1-score   support
+
+        0.0       0.84      0.40      0.54        40
+        1.0       0.04      0.25      0.07         4
+
+avg / total       0.77      0.39      0.50        44
+
+LogisticReg :
+best_params: {'C': 46415.888336127726, 'solver': 'liblinear'}
+
+             precision    recall  f1-score   support
+
+        0.0       0.91      0.80      0.85        40
+        1.0       0.11      0.25      0.15         4
+
+avg / total       0.84      0.75      0.79        44
+
+k-NN :
+best_params: {'n_neighbors': 4, 'weights': 'distance', 'leaf_size': 5, 'algorithm': 'ball_tree', 'p': 1}
+
+             precision    recall  f1-score   support
+
+        0.0       0.91      1.00      0.95        40
+        1.0       0.00      0.00      0.00         4
+
+avg / total       0.83      0.91      0.87        44
+
+DecisionTree :
+best_params: {'splitter': 'random', 'criterion': 'entropy', 'max_depth': 10}
+
+             precision    recall  f1-score   support
+
+        0.0       0.95      0.88      0.91        40
+        1.0       0.29      0.50      0.36         4
+
+avg / total       0.89      0.84      0.86        44
+
+
+NaN_percentage: 0.700000
+Features_by_NaN:
+['poi', 'salary', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+Features_Used: ['poi', 'salary', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+
+non-scaled
+RandomForest :
+best_params: {'n_estimators': 5, 'criterion': 'gini', 'max_depth': 15}
+
+             precision    recall  f1-score   support
+
+        0.0       0.95      1.00      0.98        40
+        1.0       1.00      0.50      0.67         4
+
+avg / total       0.96      0.95      0.95        44
+
+MLP :
+best_params: {'solver': 'lbfgs', 'activation': 'logistic', 'max_iter': 500, 'alpha': 0.00021544346900318823, 'learning_rate': 'constant', 'learning_rate_init': 0.0005}
+
+             precision    recall  f1-score   support
+
+        0.0       0.92      0.88      0.90        40
+        1.0       0.17      0.25      0.20         4
+
+avg / total       0.85      0.82      0.83        44
+
+LogisticReg :
+best_params: {'C': 0.01, 'solver': 'newton-cg'}
+
+             precision    recall  f1-score   support
+
+        0.0       0.91      0.80      0.85        40
+        1.0       0.11      0.25      0.15         4
+
+avg / total       0.84      0.75      0.79        44
+
+k-NN :
+best_params: {'n_neighbors': 4, 'weights': 'distance', 'leaf_size': 5, 'algorithm': 'ball_tree', 'p': 1}
+
+             precision    recall  f1-score   support
+
+        0.0       0.91      1.00      0.95        40
+        1.0       0.00      0.00      0.00         4
+
+avg / total       0.83      0.91      0.87        44
+
+DecisionTree :
+best_params: {'splitter': 'random', 'criterion': 'gini', 'max_depth': 30}
+
+             precision    recall  f1-score   support
+
+        0.0       0.94      0.85      0.89        40
+        1.0       0.25      0.50      0.33         4
+
+avg / total       0.88      0.82      0.84        44
+
+
+NaN_percentage: 1.000000
+Features_by_NaN:
+['poi', 'salary', 'deferral_payments', 'total_payments', 'loan_advances', 'bonus', 'restricted_stock_deferred', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'director_fees', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+Features_Used: ['poi', 'salary', 'deferral_payments', 'total_payments', 'loan_advances', 'bonus', 'restricted_stock_deferred', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'director_fees', 'shared_receipt_with_poi', 'fraction_from_poi', 'fraction_to_poi']
+
+scaled
+             precision    recall  f1-score   support
+
+        0.0       0.95      0.95      0.95        40
+        1.0       0.50      0.50      0.50         4
+
+avg / total       0.91      0.91      0.91        44
+
+NaN_percentage: 1.000000
+Features_by_NaN:
+['poi', 'salary', 'deferral_payments', 'total_payments', 'loan_advances', 'bonus', 'restricted_stock_deferred', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'director_fees', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+Features_Used: ['poi', 'salary', 'deferral_payments', 'total_payments', 'loan_advances', 'bonus', 'restricted_stock_deferred', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'director_fees', 'shared_receipt_with_poi', 'fraction_from_poi', 'fraction_to_poi']
+
+scaled
+             precision    recall  f1-score   support
+
+        0.0       0.91      0.97      0.94        40
+        1.0       0.00      0.00      0.00         4
+
+avg / total       0.82      0.89      0.85        44
+
+NaN_percentage: 1.000000
+Features_by_NaN:
+['poi', 'salary', 'deferral_payments', 'total_payments', 'loan_advances', 'bonus', 'restricted_stock_deferred', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'director_fees', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+Features_Used: ['poi', 'salary', 'deferral_payments', 'total_payments', 'loan_advances', 'bonus', 'restricted_stock_deferred', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'director_fees', 'shared_receipt_with_poi', 'fraction_from_poi', 'fraction_to_poi']
+
+scaled
+             precision    recall  f1-score   support
+
+        0.0       0.93      0.95      0.94        40
+        1.0       0.33      0.25      0.29         4
+
+avg / total       0.87      0.89      0.88        44
+
+NaN_percentage: 0.800000
+Features_by_NaN:
+['poi', 'salary', 'deferral_payments', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+Features_Used: ['poi', 'salary', 'deferral_payments', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+
+scaled
+             precision    recall  f1-score   support
+
+        0.0       0.95      0.97      0.96        40
+        1.0       0.67      0.50      0.57         4
+
+avg / total       0.93      0.93      0.93        44
+
+NaN_percentage: 0.800000
+Features_by_NaN:
+['poi', 'salary', 'deferral_payments', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+Features_Used: ['poi', 'salary', 'deferral_payments', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+
+scaled
+             precision    recall  f1-score   support
+
+        0.0       0.95      0.97      0.96        40
+        1.0       0.67      0.50      0.57         4
+
+avg / total       0.93      0.93      0.93        44
+
+
+NaN_percentage: 1.000000
+Features_by_NaN:
+['poi', 'salary', 'deferral_payments', 'total_payments', 'loan_advances', 'bonus', 'restricted_stock_deferred', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'director_fees', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+Features_Used: ['poi', 'salary', 'deferral_payments', 'total_payments', 'loan_advances', 'bonus', 'restricted_stock_deferred', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'director_fees', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi', 'fraction_from_poi', 'fraction_to_poi']
+
+scaled
+RandomForest :
+best_params: {'n_estimators': 20, 'criterion': 'gini', 'max_depth': 10}
+
+             precision    recall  f1-score   support
+
+        0.0       0.93      1.00      0.96        40
+        1.0       1.00      0.25      0.40         4
+
+avg / total       0.94      0.93      0.91        44
+
+MLP :
+best_params: {'solver': 'sgd', 'activation': 'identity', 'max_iter': 50, 'alpha': 0.10000000000000001, 'learning_rate': 'adaptive', 'learning_rate_init': 0.0005}
+
+             precision    recall  f1-score   support
+
+        0.0       0.94      0.78      0.85        40
+        1.0       0.18      0.50      0.27         4
+
+avg / total       0.87      0.75      0.80        44
+
+LogisticReg :
+best_params: {'C': 46415.888336127726, 'solver': 'newton-cg'}
+
+             precision    recall  f1-score   support
+
+        0.0       0.97      0.90      0.94        40
+        1.0       0.43      0.75      0.55         4
+
+avg / total       0.92      0.89      0.90        44
+
+k-NN :
+best_params: {'n_neighbors': 2, 'weights': 'distance', 'leaf_size': 5, 'algorithm': 'ball_tree', 'p': 2}
+
+             precision    recall  f1-score   support
+
+        0.0       0.95      0.93      0.94        40
+        1.0       0.40      0.50      0.44         4
+
+avg / total       0.90      0.89      0.89        44
+
+DecisionTree :
+best_params: {'splitter': 'random', 'criterion': 'entropy', 'max_depth': 10}
+
+             precision    recall  f1-score   support
+
+        0.0       0.97      0.90      0.94        40
+        1.0       0.43      0.75      0.55         4
+
+avg / total       0.92      0.89      0.90        44
+
+
+NaN_percentage: 0.800000
+Features_by_NaN:
+['poi', 'salary', 'deferral_payments', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+Features_Used: ['poi', 'salary', 'deferral_payments', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi', 'fraction_from_poi', 'fraction_to_poi']
+
+scaled
+RandomForest :
+best_params: {'n_estimators': 5, 'criterion': 'gini', 'max_depth': 15}
+
+             precision    recall  f1-score   support
+
+        0.0       0.95      0.95      0.95        40
+        1.0       0.50      0.50      0.50         4
+
+avg / total       0.91      0.91      0.91        44
+
+MLP :
+best_params: {'solver': 'adam', 'activation': 'relu', 'max_iter': 200, 'alpha': 46.415888336127729, 'learning_rate': 'invscaling', 'learning_rate_init': 0.0001}
+
+             precision    recall  f1-score   support
+
+        0.0       0.95      0.95      0.95        40
+        1.0       0.50      0.50      0.50         4
+
+avg / total       0.91      0.91      0.91        44
+
+LogisticReg :
+best_params: {'C': 21544346.900318779, 'solver': 'newton-cg'}
+
+             precision    recall  f1-score   support
+
+        0.0       0.97      0.93      0.95        40
+        1.0       0.50      0.75      0.60         4
+
+avg / total       0.93      0.91      0.92        44
+
+k-NN :
+best_params: {'n_neighbors': 2, 'weights': 'distance', 'leaf_size': 5, 'algorithm': 'ball_tree', 'p': 1}
+
+             precision    recall  f1-score   support
+
+        0.0       0.95      0.97      0.96        40
+        1.0       0.67      0.50      0.57         4
+
+avg / total       0.93      0.93      0.93        44
+
+DecisionTree :
+best_params: {'splitter': 'random', 'criterion': 'entropy', 'max_depth': None}
+
+             precision    recall  f1-score   support
+
+        0.0       0.95      0.95      0.95        40
+        1.0       0.50      0.50      0.50         4
+
+avg / total       0.91      0.91      0.91        44
+
+
+NaN_percentage: 0.700000
+Features_by_NaN:
+['poi', 'salary', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+Features_Used: ['poi', 'salary', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi', 'fraction_from_poi', 'fraction_to_poi']
+
+scaled
+RandomForest :
+best_params: {'n_estimators': 5, 'criterion': 'gini', 'max_depth': 30}
+
+             precision    recall  f1-score   support
+
+        0.0       0.92      0.90      0.91        40
+        1.0       0.20      0.25      0.22         4
+
+avg / total       0.86      0.84      0.85        44
+
+MLP :
+best_params: {'solver': 'sgd', 'activation': 'tanh', 'max_iter': 500, 'alpha': 4.6415888336127725e-07, 'learning_rate': 'invscaling', 'learning_rate_init': 0.001}
+
+             precision    recall  f1-score   support
+
+        0.0       0.96      0.55      0.70        40
+        1.0       0.14      0.75      0.24         4
+
+avg / total       0.88      0.57      0.66        44
+
+LogisticReg :
+best_params: {'C': 46415.888336127726, 'solver': 'newton-cg'}
+
+             precision    recall  f1-score   support
+
+        0.0       0.95      0.93      0.94        40
+        1.0       0.40      0.50      0.44         4
+
+avg / total       0.90      0.89      0.89        44
+
+k-NN :
+best_params: {'n_neighbors': 2, 'weights': 'distance', 'leaf_size': 5, 'algorithm': 'ball_tree', 'p': 2}
+
+             precision    recall  f1-score   support
+
+        0.0       0.95      0.95      0.95        40
+        1.0       0.50      0.50      0.50         4
+
+avg / total       0.91      0.91      0.91        44
+
+DecisionTree :
+best_params: {'splitter': 'random', 'criterion': 'gini', 'max_depth': 15}
+
+             precision    recall  f1-score   support
+
+        0.0       0.97      0.93      0.95        40
+        1.0       0.50      0.75      0.60         4
+
+avg / total       0.93      0.91      0.92        44
+
+
+NaN_percentage: 1.000000
+Features_by_NaN:
+['poi', 'salary', 'deferral_payments', 'total_payments', 'loan_advances', 'bonus', 'restricted_stock_deferred', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'director_fees', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+Features_Used: ['poi', 'salary', 'deferral_payments', 'total_payments', 'loan_advances', 'bonus', 'restricted_stock_deferred', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'director_fees', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi', 'fraction_from_poi', 'fraction_to_poi']
+
+non-scaled
+RandomForest :
+best_params: {'n_estimators': 5, 'criterion': 'entropy', 'max_depth': 10}
+
+             precision    recall  f1-score   support
+
+        0.0       0.91      0.97      0.94        40
+        1.0       0.00      0.00      0.00         4
+
+avg / total       0.82      0.89      0.85        44
+
+MLP :
+best_params: {'solver': 'lbfgs', 'activation': 'logistic', 'max_iter': 100, 'alpha': 2.1544346900318822e-08, 'learning_rate': 'adaptive', 'learning_rate_init': 0.0001}
+
+             precision    recall  f1-score   support
+
+        0.0       0.88      0.75      0.81        40
+        1.0       0.00      0.00      0.00         4
+
+avg / total       0.80      0.68      0.74        44
+
+LogisticReg :
+best_params: {'C': 4.6415888336127775, 'solver': 'newton-cg'}
+
+             precision    recall  f1-score   support
+
+        0.0       0.95      0.93      0.94        40
+        1.0       0.40      0.50      0.44         4
+
+avg / total       0.90      0.89      0.89        44
+
+k-NN :
+best_params: {'n_neighbors': 4, 'weights': 'distance', 'leaf_size': 5, 'algorithm': 'ball_tree', 'p': 1}
+
+             precision    recall  f1-score   support
+
+        0.0       0.93      1.00      0.96        40
+        1.0       1.00      0.25      0.40         4
+
+avg / total       0.94      0.93      0.91        44
+
+DecisionTree :
+best_params: {'splitter': 'random', 'criterion': 'gini', 'max_depth': 10}
+
+             precision    recall  f1-score   support
+
+        0.0       0.93      0.93      0.93        40
+        1.0       0.25      0.25      0.25         4
+
+avg / total       0.86      0.86      0.86        44
+
+
+NaN_percentage: 0.800000
+Features_by_NaN:
+['poi', 'salary', 'deferral_payments', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+Features_Used: ['poi', 'salary', 'deferral_payments', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi', 'fraction_from_poi', 'fraction_to_poi']
+
+non-scaled
+RandomForest :
+best_params: {'n_estimators': 5, 'criterion': 'gini', 'max_depth': None}
+
+             precision    recall  f1-score   support
+
+        0.0       0.97      0.93      0.95        40
+        1.0       0.50      0.75      0.60         4
+
+avg / total       0.93      0.91      0.92        44
+
+MLP :
+best_params: {'solver': 'lbfgs', 'activation': 'logistic', 'max_iter': 50, 'alpha': 0.00021544346900318823, 'learning_rate': 'adaptive', 'learning_rate_init': 0.001}
+
+             precision    recall  f1-score   support
+
+        0.0       0.90      0.88      0.89        40
+        1.0       0.00      0.00      0.00         4
+
+avg / total       0.82      0.80      0.81        44
+
+LogisticReg :
+best_params: {'C': 46415.888336127726, 'solver': 'liblinear'}
+
+             precision    recall  f1-score   support
+
+        0.0       0.91      0.80      0.85        40
+        1.0       0.11      0.25      0.15         4
+
+avg / total       0.84      0.75      0.79        44
+
+k-NN :
+best_params: {'n_neighbors': 4, 'weights': 'distance', 'leaf_size': 5, 'algorithm': 'ball_tree', 'p': 1}
+
+             precision    recall  f1-score   support
+
+        0.0       0.91      1.00      0.95        40
+        1.0       0.00      0.00      0.00         4
+
+avg / total       0.83      0.91      0.87        44
+
+DecisionTree :
+best_params: {'splitter': 'random', 'criterion': 'entropy', 'max_depth': 10}
+
+             precision    recall  f1-score   support
+
+        0.0       0.95      0.95      0.95        40
+        1.0       0.50      0.50      0.50         4
+
+avg / total       0.91      0.91      0.91        44
+
+NaN_percentage: 0.700000
+Features_by_NaN:
+['poi', 'salary', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+Features_Used: ['poi', 'salary', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi', 'fraction_from_poi', 'fraction_to_poi']
+
+non-scaled
+RandomForest :
+best_params: {'n_estimators': 10, 'criterion': 'entropy', 'max_depth': 5}
+
+             precision    recall  f1-score   support
+
+        0.0       0.91      1.00      0.95        40
+        1.0       0.00      0.00      0.00         4
+
+avg / total       0.83      0.91      0.87        44
+
+MLP :
+best_params: {'solver': 'lbfgs', 'activation': 'logistic', 'max_iter': 200, 'alpha': 0.00021544346900318823, 'learning_rate': 'adaptive', 'learning_rate_init': 0.005}
+
+             precision    recall  f1-score   support
+
+        0.0       0.89      0.78      0.83        40
+        1.0       0.00      0.00      0.00         4
+
+avg / total       0.81      0.70      0.75        44
+
+LogisticReg :
+best_params: {'C': 100.0, 'solver': 'liblinear'}
+
+             precision    recall  f1-score   support
+
+        0.0       0.92      0.82      0.87        40
+        1.0       0.12      0.25      0.17         4
+
+avg / total       0.84      0.77      0.80        44
+
+k-NN :
+best_params: {'n_neighbors': 4, 'weights': 'distance', 'leaf_size': 5, 'algorithm': 'ball_tree', 'p': 1}
+
+             precision    recall  f1-score   support
+
+        0.0       0.91      1.00      0.95        40
+        1.0       0.00      0.00      0.00         4
+
+avg / total       0.83      0.91      0.87        44
+
+DecisionTree :
+best_params: {'splitter': 'random', 'criterion': 'gini', 'max_depth': 15}
+
+             precision    recall  f1-score   support
+
+        0.0       0.92      0.85      0.88        40
+        1.0       0.14      0.25      0.18         4
+
+avg / total       0.85      0.80      0.82        44
+
+
+
+
+NaN_percentage: 0.800000
+Features_by_NaN:
+['poi', 'salary', 'deferral_payments', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+Features_Used: ['poi', 'salary', 'deferral_payments', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi', 'fraction_from_poi', 'fraction_to_poi']
+
+scaled
+             precision    recall  f1-score   support
+
+        0.0       0.95      0.97      0.96        40
+        1.0       0.67      0.50      0.57         4
+
+avg / total       0.93      0.93      0.93        44
+
+NaN_percentage: 0.800000
+Features_by_NaN:
+['poi', 'salary', 'deferral_payments', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+Features_Used: ['poi', 'salary', 'deferral_payments', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'shared_receipt_with_poi', 'fraction_from_poi', 'fraction_to_poi']
+
+scaled
+             precision    recall  f1-score   support
+
+        0.0       0.95      0.97      0.96        40
+        1.0       0.67      0.50      0.57         4
+
+avg / total       0.93      0.93      0.93        44
+
+NaN_percentage: 0.800000
+Features_by_NaN:
+['poi', 'salary', 'deferral_payments', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+Features_Used: ['poi', 'salary', 'deferral_payments', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+
+scaled
+             precision    recall  f1-score   support
+
+        0.0       0.95      0.97      0.96        40
+        1.0       0.67      0.50      0.57         4
+
+avg / total       0.93      0.93      0.93        44
+
+
+
+
+
+
+USING DEFAULT HELPER FUNCTIONS
+
+NaN_percentage: 0.800000
+Features_by_NaN:
+['poi', 'salary', 'deferral_payments', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+Features_Used: ['poi', 'salary', 'deferral_payments', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+
+scaled
+RandomForest :
+best_params: {'n_estimators': 5, 'criterion': 'entropy', 'max_depth': None}
+
+             precision    recall  f1-score   support
+
+        0.0       0.88      0.92      0.90        39
+        1.0       0.00      0.00      0.00         5
+
+avg / total       0.78      0.82      0.80        44
+
+MLP :
+best_params: {'solver': 'sgd', 'activation': 'identity', 'max_iter': 50, 'alpha': 0.0046415888336127729, 'learning_rate': 'adaptive', 'learning_rate_init': 0.0005}
+
+             precision    recall  f1-score   support
+
+        0.0       0.90      0.97      0.94        39
+        1.0       0.50      0.20      0.29         5
+
+avg / total       0.86      0.89      0.86        44
+
+LogisticReg :
+best_params: {'C': 4.6415888336127775, 'solver': 'liblinear'}
+
+             precision    recall  f1-score   support
+
+        0.0       0.93      0.97      0.95        39
+        1.0       0.67      0.40      0.50         5
+
+avg / total       0.90      0.91      0.90        44
+
+k-NN :
+best_params: {'n_neighbors': 2, 'weights': 'distance', 'leaf_size': 5, 'algorithm': 'ball_tree', 'p': 1}
+
+             precision    recall  f1-score   support
+
+        0.0       0.95      1.00      0.97        39
+        1.0       1.00      0.60      0.75         5
+
+avg / total       0.96      0.95      0.95        44
+
+DecisionTree :
+best_params: {'splitter': 'random', 'criterion': 'entropy', 'max_depth': None}
+
+             precision    recall  f1-score   support
+
+        0.0       0.92      0.92      0.92        39
+        1.0       0.40      0.40      0.40         5
+
+avg / total       0.86      0.86      0.86        44
+
+NaN_percentage: 0.800000
+Features_by_NaN:
+['poi', 'salary', 'deferral_payments', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+Features_Used: ['poi', 'salary', 'deferral_payments', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+
+scaled
+             precision    recall  f1-score   support
+
+        0.0       0.95      1.00      0.97        39
+        1.0       1.00      0.60      0.75         5
+
+avg / total       0.96      0.95      0.95        44
+
+NaN_percentage: 0.800000
+Features_by_NaN:
+['poi', 'salary', 'deferral_payments', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+Features_Used: ['poi', 'salary', 'deferral_payments', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+
+             precision    recall  f1-score   support
+
+        0.0       0.95      1.00      0.97        39
+        1.0       1.00      0.60      0.75         5
+
+avg / total       0.96      0.95      0.95        44
+
+NaN_percentage: 0.800000
+Features_by_NaN:
+['poi', 'salary', 'deferral_payments', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+Features_Used: ['poi', 'salary', 'deferral_payments', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+
+             precision    recall  f1-score   support
+
+        0.0       0.95      1.00      0.97        39
+        1.0       1.00      0.60      0.75         5
+
+avg / total       0.96      0.95      0.95        44
+
+NaN_percentage: 0.800000
+Features_by_NaN:
+['poi', 'salary', 'deferral_payments', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+Features_Used: ['poi', 'salary', 'deferral_payments', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+
+             precision    recall  f1-score   support
+
+        0.0       0.93      0.97      0.95        39
+        1.0       0.67      0.40      0.50         5
+
+avg / total       0.90      0.91      0.90        44
+
+NaN_percentage: 0.800000
+Features_by_NaN:
+['poi', 'salary', 'deferral_payments', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+Features_Used: ['poi', 'salary', 'deferral_payments', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+
+             precision    recall  f1-score   support
+
+        0.0       0.95      1.00      0.97        39
+        1.0       1.00      0.60      0.75         5
+
+avg / total       0.96      0.95      0.95        44
+
+NaN_percentage: 1.000000
+Features_by_NaN:
+['poi', 'salary', 'deferral_payments', 'total_payments', 'loan_advances', 'bonus', 'restricted_stock_deferred', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'director_fees', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+Features_Used: ['poi', 'salary', 'deferral_payments', 'total_payments', 'loan_advances', 'bonus', 'restricted_stock_deferred', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'director_fees', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+
+             precision    recall  f1-score   support
+
+        0.0       0.90      0.97      0.94        39
+        1.0       0.50      0.20      0.29         5
+
+avg / total       0.86      0.89      0.86        44
+
+NaN_percentage: 0.800000
+Features_by_NaN:
+['poi', 'salary', 'deferral_payments', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+Features_Used: ['poi', 'salary', 'deferral_payments', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+
+             precision    recall  f1-score   support
+
+        0.0       0.90      0.92      0.91        39
+        1.0       0.25      0.20      0.22         5
+
+avg / total       0.83      0.84      0.83        44
+
+NaN_percentage: 0.800000
+Features_by_NaN:
+['poi', 'salary', 'deferral_payments', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+Features_Used: ['poi', 'salary', 'deferral_payments', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+
+             precision    recall  f1-score   support
+
+        0.0       0.95      1.00      0.97        39
+        1.0       1.00      0.60      0.75         5
+
+avg / total       0.96      0.95      0.95        44
+
+
+NaN_percentage: 0.800000
+Features_by_NaN:
+['poi', 'salary', 'deferral_payments', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+Features_Used: ['poi', 'salary', 'deferral_payments', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi', 'fraction_from_poi', 'fraction_to_poi']
+
+             precision    recall  f1-score   support
+
+        0.0       0.95      1.00      0.97        39
+        1.0       1.00      0.60      0.75         5
+
+avg / total       0.96      0.95      0.95        44
+
+
+
+################################################################
+
+
+NaN_percentage: 0.800000
+Features_by_NaN:
+['poi', 'salary', 'deferral_payments', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+Features_Used: ['poi', 'salary', 'deferral_payments', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi', 'fraction_from_poi', 'fraction_to_poi']
+
+Pipeline(memory=None,
+     steps=[('standardscaler', StandardScaler(copy=True, with_mean=True, with_std=True)), ('kneighborsclassifier', KNeighborsClassifier(algorithm='ball_tree', leaf_size=5, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=2, p=1,
+           weights='distance'))])
+	Accuracy: 0.85100	Precision: 0.43343	Recall: 0.38250	F1: 0.40637	F2: 0.39171
+	Total predictions: 15000	True positives:  765	False positives: 1000	False negatives: 1235	True negatives: 12000
+
+
+NaN_percentage: 0.800000
+Features_by_NaN:
+['poi', 'salary', 'deferral_payments', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+Features_Used: ['poi', 'salary', 'deferral_payments', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'shared_receipt_with_poi', 'fraction_from_poi', 'fraction_to_poi']
+
+Pipeline(memory=None,
+     steps=[('standardscaler', StandardScaler(copy=True, with_mean=True, with_std=True)), ('kneighborsclassifier', KNeighborsClassifier(algorithm='ball_tree', leaf_size=5, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=2, p=1,
+           weights='distance'))])
+	Accuracy: 0.84080	Precision: 0.36103	Recall: 0.25200	F1: 0.29682	F2: 0.26820
+	Total predictions: 15000	True positives:  504	False positives:  892	False negatives: 1496	True negatives: 12108
+
+
+NaN_percentage: 0.800000
+Features_by_NaN:
+['poi', 'salary', 'deferral_payments', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+Features_Used: ['poi', 'salary', 'deferral_payments', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+
+Pipeline(memory=None,
+     steps=[('standardscaler', StandardScaler(copy=True, with_mean=True, with_std=True)), ('kneighborsclassifier', KNeighborsClassifier(algorithm='ball_tree', leaf_size=5, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=2, p=1,
+           weights='distance'))])
+	Accuracy: 0.85100	Precision: 0.43343	Recall: 0.38250	F1: 0.40637	F2: 0.39171
+	Total predictions: 15000	True positives:  765	False positives: 1000	False negatives: 1235	True negatives: 12000
+
+
+NaN_percentage: 1.000000
+Features_by_NaN:
+['poi', 'salary', 'deferral_payments', 'total_payments', 'loan_advances', 'bonus', 'restricted_stock_deferred', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'director_fees', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+Features_Used: ['poi', 'salary', 'deferral_payments', 'total_payments', 'loan_advances', 'bonus', 'restricted_stock_deferred', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'director_fees', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+
+Pipeline(memory=None,
+     steps=[('standardscaler', StandardScaler(copy=True, with_mean=True, with_std=True)), ('randomforestclassifier', RandomForestClassifier(bootstrap=True, class_weight=None, criterion='gini',
+            max_depth=5, max_features='auto', max_leaf_nodes=None,
+            min_impurity_decrease=0.0, min_im...n_jobs=1,
+            oob_score=False, random_state=None, verbose=0,
+            warm_start=False))])
+	Accuracy: 0.84927	Precision: 0.36477	Recall: 0.17600	F1: 0.23744	F2: 0.19632
+	Total predictions: 15000	True positives:  352	False positives:  613	False negatives: 1648	True negatives: 12387
+NaN_percentage: 0.800000
+Features_by_NaN:
+['poi', 'salary', 'deferral_payments', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+Features_Used: ['poi', 'salary', 'deferral_payments', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+
+Pipeline(memory=None,
+     steps=[('standardscaler', StandardScaler(copy=True, with_mean=True, with_std=True)), ('randomforestclassifier', RandomForestClassifier(bootstrap=True, class_weight=None, criterion='entropy',
+            max_depth=None, max_features='auto', max_leaf_nodes=None,
+            min_impurity_decrease=0.0, ...n_jobs=1,
+            oob_score=False, random_state=None, verbose=0,
+            warm_start=False))])
+	Accuracy: 0.84307	Precision: 0.32849	Recall: 0.16950	F1: 0.22361	F2: 0.18767
+	Total predictions: 15000	True positives:  339	False positives:  693	False negatives: 1661	True negatives: 12307
+
+NaN_percentage: 0.800000
+Features_by_NaN:
+['poi', 'salary', 'deferral_payments', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+Features_Used: ['poi', 'salary', 'deferral_payments', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+
+Pipeline(memory=None,
+     steps=[('standardscaler', StandardScaler(copy=True, with_mean=True, with_std=True)), ('kneighborsclassifier', KNeighborsClassifier(algorithm='ball_tree', leaf_size=5, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=2, p=1,
+           weights='distance'))])
+	Accuracy: 0.85100	Precision: 0.43343	Recall: 0.38250	F1: 0.40637	F2: 0.39171
+	Total predictions: 15000	True positives:  765	False positives: 1000	False negatives: 1235	True negatives: 12000
+
+
+NaN_percentage: 0.800000
+Features_by_NaN:
+['poi', 'salary', 'deferral_payments', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+Features_Used: ['poi', 'salary', 'deferral_payments', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi', 'fraction_from_poi', 'fraction_to_poi']
+
+Pipeline(memory=None,
+     steps=[('standardscaler', StandardScaler(copy=True, with_mean=True, with_std=True)), ('kneighborsclassifier', KNeighborsClassifier(algorithm='ball_tree', leaf_size=5, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=2, p=1,
+           weights='distance'))])
+	Accuracy: 0.85100	Precision: 0.43343	Recall: 0.38250	F1: 0.40637	F2: 0.39171
+	Total predictions: 15000	True positives:  765	False positives: 1000	False negatives: 1235	True negatives: 12000
+
+NaN_percentage: 0.800000
+Features_by_NaN:
+['poi', 'salary', 'deferral_payments', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+Features_Used: ['poi', 'salary', 'deferral_payments', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'shared_receipt_with_poi', 'fraction_from_poi', 'fraction_to_poi']
+
+Pipeline(memory=None,
+     steps=[('standardscaler', StandardScaler(copy=True, with_mean=True, with_std=True)), ('kneighborsclassifier', KNeighborsClassifier(algorithm='ball_tree', leaf_size=5, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=2, p=1,
+           weights='distance'))])
+	Accuracy: 0.84080	Precision: 0.36103	Recall: 0.25200	F1: 0.29682	F2: 0.26820
+	Total predictions: 15000	True positives:  504	False positives:  892	False negatives: 1496	True negatives: 12108
+
+
+
+NaN_percentage: 1.000000
+Features_by_NaN:
+['poi', 'salary', 'deferral_payments', 'total_payments', 'loan_advances', 'bonus', 'restricted_stock_deferred', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'director_fees', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+Features_Used: ['poi', 'salary', 'deferral_payments', 'total_payments', 'loan_advances', 'bonus', 'restricted_stock_deferred', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'director_fees', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+
+Pipeline(memory=None,
+     steps=[('standardscaler', StandardScaler(copy=True, with_mean=True, with_std=True)), ('kneighborsclassifier', KNeighborsClassifier(algorithm='ball_tree', leaf_size=5, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=2, p=1,
+           weights='distance'))])
+	Accuracy: 0.83547	Precision: 0.37310	Recall: 0.34400	F1: 0.35796	F2: 0.34945
+	Total predictions: 15000	True positives:  688	False positives: 1156	False negatives: 1312	True negatives: 11844
+
+
+NaN_percentage: 0.900000
+Features_by_NaN:
+['poi', 'salary', 'deferral_payments', 'total_payments', 'bonus', 'restricted_stock_deferred', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'director_fees', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+Features_Used: ['poi', 'salary', 'deferral_payments', 'total_payments', 'bonus', 'restricted_stock_deferred', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'director_fees', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+
+Pipeline(memory=None,
+     steps=[('standardscaler', StandardScaler(copy=True, with_mean=True, with_std=True)), ('kneighborsclassifier', KNeighborsClassifier(algorithm='ball_tree', leaf_size=5, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=2, p=1,
+           weights='distance'))])
+	Accuracy: 0.84107	Precision: 0.40041	Recall: 0.38600	F1: 0.39308	F2: 0.38880
+	Total predictions: 15000	True positives:  772	False positives: 1156	False negatives: 1228	True negatives: 11844
+
+
+NaN_percentage: 0.800000
+Features_by_NaN:
+['poi', 'salary', 'deferral_payments', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+Features_Used: ['poi', 'salary', 'deferral_payments', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+
+Pipeline(memory=None,
+     steps=[('standardscaler', StandardScaler(copy=True, with_mean=True, with_std=True)), ('kneighborsclassifier', KNeighborsClassifier(algorithm='ball_tree', leaf_size=5, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=2, p=1,
+           weights='distance'))])
+	Accuracy: 0.85100	Precision: 0.43343	Recall: 0.38250	F1: 0.40637	F2: 0.39171
+	Total predictions: 15000	True positives:  765	False positives: 1000	False negatives: 1235	True negatives: 12000
+
+
+NaN_percentage: 0.700000
+Features_by_NaN:
+['poi', 'salary', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+Features_Used: ['poi', 'salary', 'total_payments', 'bonus', 'deferred_income', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+
+Pipeline(memory=None,
+     steps=[('standardscaler', StandardScaler(copy=True, with_mean=True, with_std=True)), ('kneighborsclassifier', KNeighborsClassifier(algorithm='ball_tree', leaf_size=5, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=2, p=1,
+           weights='distance'))])
+	Accuracy: 0.84247	Precision: 0.40361	Recall: 0.38000	F1: 0.39145	F2: 0.38450
+	Total predictions: 15000	True positives:  760	False positives: 1123	False negatives: 1240	True negatives: 11877
+
+
+NaN_percentage: 0.600000
+Features_by_NaN:
+['poi', 'salary', 'total_payments', 'bonus', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+Features_Used: ['poi', 'salary', 'total_payments', 'bonus', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'long_term_incentive', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+
+Pipeline(memory=None,
+     steps=[('standardscaler', StandardScaler(copy=True, with_mean=True, with_std=True)), ('kneighborsclassifier', KNeighborsClassifier(algorithm='ball_tree', leaf_size=5, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=2, p=1,
+           weights='distance'))])
+	Accuracy: 0.84227	Precision: 0.39248	Recall: 0.33400	F1: 0.36089	F2: 0.34426
+	Total predictions: 15000	True positives:  668	False positives: 1034	False negatives: 1332	True negatives: 11966
+
+
+NaN_percentage: 0.500000
+Features_by_NaN:
+['poi', 'salary', 'total_payments', 'bonus', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+Features_Used: ['poi', 'salary', 'total_payments', 'bonus', 'total_stock_value', 'expenses', 'exercised_stock_options', 'other', 'restricted_stock', 'to_messages', 'from_poi_to_this_person', 'from_messages', 'from_this_person_to_poi', 'shared_receipt_with_poi']
+
+Pipeline(memory=None,
+     steps=[('standardscaler', StandardScaler(copy=True, with_mean=True, with_std=True)), ('kneighborsclassifier', KNeighborsClassifier(algorithm='ball_tree', leaf_size=5, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=2, p=1,
+           weights='distance'))])
+	Accuracy: 0.82827	Precision: 0.35657	Recall: 0.35800	F1: 0.35729	F2: 0.35771
+	Total predictions: 15000	True positives:  716	False positives: 1292	False negatives: 1284	True negatives: 11708
